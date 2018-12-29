@@ -18,10 +18,12 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 from photos.views import photo_list
+from home.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/home', photo_list, name='photo_list'),
+    path('portraits/', photo_list, name='portraits'),
+    path('home/', home, name='home'),
 ]
 
 if settings.DEBUG:
