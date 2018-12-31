@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'photos',
+    'travel_app'
 ]
 
 MIDDLEWARE = [

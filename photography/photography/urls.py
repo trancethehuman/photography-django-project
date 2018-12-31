@@ -18,12 +18,14 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 from photos.views import photo_list
+from travel_app.views import photo_list_travel
 from home.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('portraits/', photo_list, name='portraits'),
     path('home/', home, name='home'),
+    path('travel/', photo_list_travel, name='travel'),
 ]
 
 if settings.DEBUG:
